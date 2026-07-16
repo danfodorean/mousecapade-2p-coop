@@ -1,0 +1,12 @@
+# Never commit ROMs -- not the base game, not the patched output.
+*.nes
+*.fds
+*.unf
+*.dmp
+*.sav
+*.zip
+
+# Build/test scratch
+__pycache__/
+*.pyc
+used_tiles.json
