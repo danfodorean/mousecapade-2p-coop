@@ -19,6 +19,7 @@ doors, item pickups, and her own star shots.
 - Each character shoots with their own B button in two-player
 - Exactly one background tile differs from the original ROM (the cursor star)
 - Mapper 3 / CNROM, no expansion hardware — runs on real hardware
+- The patching hashes in the README are for the base ROM, so they stay correct as-is.
 
 ## Patching
 
@@ -46,9 +47,9 @@ The hack is assembled by a Python toolchain rather than a hex editor:
 
 | File | Purpose |
 |---|---|
-| `build_patch_v40.py` | Applies site patches + code blobs, emits the ROM and IPS |
-| `v40_gates.py`       | 6502 gate routines, hook table, free-space map |
-| `test_gates_v40.py`  | 27 unit tests for the mode gates |
+| `build_patch_v41.py` | Applies site patches + code blobs, emits the ROM and IPS |
+| `v41_gates.py`       | 6502 gate routines, hook table, free-space map |
+| `test_gates_v41.py`  | 27 unit tests for the mode gates |
 | `nes_fast.py`        | Headless 6502 harness (exec-compiled opcode handlers) |
 | `audit_tiles.py`     | CNROM+PPU shim; runs the real screen loaders and records every tile written to a nametable |
 | `make_bps.py`        | BPS patch creation + verification |
